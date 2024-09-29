@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nova stream</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 760px;
+            width: 70%;
+            margin: 0em auto;
+            border: 1px solid rgba(0, 0, 0, 0.048);
+            color:rgb(11, 114, 250);
+            font-family: "Lato", system-ui;
+  font-style: normal;
+        }
+        table{
+            width: 60%;
+            height: 100vh;
+            border-spacing: 0px;
+            margin: 0em auto;
+            background-color: rgb(0, 0, 0);
+            overflow: hidden;
+        }
+        .header th .image-1, .image-3{
+            width: 100%;
+            background-size: cover;
+        }
+        .image-2{
+            max-width: 20%;
+            border-radius: 100%;
+            margin-bottom: 0em;
+        }
+        .main-1 td{
+            text-align: center;
+        }
+        h2{
+            padding-left: 1em;
+            font-size: 18px;
+  font-weight: 800;
+        }
+        .p-1{
+            padding: 0.9em 0em 3em 0.8em;
+            font-size: 16px;
+  font-weight: 700;
+        }
+        h3{
+            display: block;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 2em;
+        }
+        h4{
+  font-weight: 700;
+  font-size: 15px;
+        }
+        button{
+            display: block;
+            margin:0em auto 2em auto;
+            width: 80%;
+            border-radius: 20px;
+            border: none;
+            height:25px;
+            transition: all 0.4s ease;
+            background-color: rgb(0, 110, 255);
+            outline: none;
+            font-weight: bold;
+            color: white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(0, 110, 255, 0.555);
+        }
+        h2, .p-1, h3{
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .footer td p{
+            color:rgb(11, 114, 250);
+            text-align: center;
+            font-size: 14px;
+  font-weight: 300;
+        }
+        a i{
+            color: white;
+            font-size: 16px;
+        }
+        /*style mobile*/
+        @media (max-width: 600px){
+            body{
+                max-width: 760px;
+                width: 100%;
+            }
+            table{
+                width: 100%;
+            }
+            button:focus{
+                background-color: rgba(0, 110, 255, 0.432);
+            }
+            .image-2{
+                max-width: 30%;
+            }
+            button{
+                height: 30pxpx;
+            }
+        }
+        /*style ipad*/
+        @media (min-width:600px) and (max-width: 1024px){
+            body{
+                max-width: 760px;
+                width: 90%;
+            }
+            table{
+                width: 100%;
+            }
+            .footer td p{
+                font-size: 17px;
+            }
+            button{
+                height: 28px;
+            }
+            button:focus{
+                background-color: rgba(0, 110, 255, 0.432);
+            }
+            .image-2{
+                max-width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!--header-->
+        <tr class="header">
+            <th>
+               <img src="images/stream-1.png" alt="image for nova stream 1" class="image-1">
+            </th>
+        </tr>
+        <!--main-->
+        <tr class="main">
+            <td>
+                <h2>Hey there,</h2>
+                <p class="p-1">Atro gaming just went live! Click the button below to watch</p>
+            </td>
+        </tr>
+        <tr class="main-1">
+            <td>
+                <img src="images/atro.png" alt="image for nova stream 2" class="image-2">
+                <h3>Atro gaming</h3>
+                <button>Watch now</button>
+            </td>
+        </tr>
+        <tr class="main-2">
+            <td>
+                <img src="images/stream-2.png" alt="" class="image-3">
+            </td>
+        </tr>
+        <!--footer-->
+        <tr class="footer">
+            <td>
+                <p> © 2024 Nova Stream. All rights reserved.</p>
+                <p>To display the latest events: 
+                    <a href=""> <i class='bx bxl-facebook-circle' ></i></a>
+                    <a href=""> <i class='bx bxl-instagram' ></i></a>
+                    <a href=""> <i class='bx bxl-linkedin' ></i></a>
+                    <a href=""> <i class='bx bxl-discord-alt'></i></a>
+                </p>
+                <p>Novastream.support@fgmail.com</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
